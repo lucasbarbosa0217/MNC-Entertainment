@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'framer-motion'; // Corrigido o import do motion
 import MenuButton from './MenuButton';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import Hamburger from './Hamburguer';
 import MenuHamburger from './Hamburguer';
 
 const Menu = () => {

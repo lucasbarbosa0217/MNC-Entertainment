@@ -61,11 +61,11 @@ const MenuButton: React.FC<Props> = ({children, titulo}) => {
               {visible && (
                   <motion.div
                       role="menu"
-                      className=" absolute top-[100%] overflow-hidden box-border  bg-blue-600 text-slate-100 "
-                      initial={{ height: 0 }}
-                      transition={{ type: "spring", stiffness: 50 }}
-                      animate={{ height: "auto" }}
-                      exit={{ height: 0 }}
+                      className=" absolute top-[100%] overflow-hidden box-border z-50  bg-blue-600 text-slate-100 "
+                      initial={{ height: 0 , opacity: 0}}
+                      transition={{ type: "tween", stiffness: 50 }}
+                      animate={{ height: "auto", opacity: 1 } }
+                      exit={{ height: 0, opacity: 0 }}
                       style={{ minWidth: buttonRef.current?.offsetWidth }}
                       aria-expanded={visible} 
                   >
